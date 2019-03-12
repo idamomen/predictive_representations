@@ -6,8 +6,10 @@ from SR_no_action import SR_no_action
 
 def SRclass_nathum_exp1(envstep, gamma, alpha, p_sample, verbose):
 
-    ''' This class is an SR agent that takes the environment from Exp 1, 
-        Nat Hum Beh paper and learns predictive representations with the 
+    ''' This function uses the reinfrocement learning agent class in 
+        SR_no_action.py to learn.
+        Here the function takes the environment from Experiment 1 in our
+        Nat Hum Beh paper & learns predictive representations with the 
         specified learning rate and scale. 
 
         Note: This is not SR dyna, nor SR-MB. 
@@ -26,7 +28,9 @@ def SRclass_nathum_exp1(envstep, gamma, alpha, p_sample, verbose):
         M: SR matrix 
         W: value weights W
         memory: memory of episodes 
-        episodies: # episodes it takes to reach convergence '''
+        episodies: # episodes it takes to reach convergence 
+
+        Ida Momennejad, NYC, 2019'''
 
     SR_agent = SR_no_action(gamma, alpha, p_sample, len(envstep))
     episodes = 0
@@ -55,5 +59,3 @@ def SRclass_nathum_exp1(envstep, gamma, alpha, p_sample, verbose):
             break
 
     return SR_agent.M, SR_agent.W , SR_agent.memory, episodes
-
-
