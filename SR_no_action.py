@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import random
-
+import math
 
 class SR_no_action():
 
@@ -97,7 +97,7 @@ class SR_no_action():
 
 		self.memory.append([s, s_new])
 
-
+	
 	def update_biggest_change(self, old_v_m, s):
 		''' Coompute the change in value, see if it is higher
 			than the present max change, if so, update biggest_change '''
