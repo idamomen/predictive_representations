@@ -2,8 +2,11 @@
 
 predictive_representations is a repository for successor representation codes and classes used in published papers and preprints.
 
-A list of files will follow.
+The main notebook to look out for is: 
+SRDyna_NatHumBeh_Exp1_learning
 
+This notebook calls SRDyna_nathum_exp1.m, 
+which itself uses the RL agent class in SR_dyna_no_action.py.
 
 # References
 
